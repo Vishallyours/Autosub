@@ -31,3 +31,12 @@ body {
     text-wrap: balance;
   }
 }
+/* Custom font */
+@font-face {
+  font-family: 'CustomFont';
+  src: url('/fonts/eclipse.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+

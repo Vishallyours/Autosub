@@ -7,6 +7,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        navbarColor: '#D9D9D9',
+        textColor:'#1E1E1E',
+      },
+      fontFamily: {
+        custom: ['CustomFont',],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
