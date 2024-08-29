@@ -19,6 +19,20 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      height: {
+        '108' : '27rem',
+        '120' : '30rem',
+        '132' : '33rem',
+        '144' : '36rem',
+      },
+      width:{
+        '108' : '27rem',
+        '120' : '30rem',
+        '132' : '33rem',
+        '144' : '36rem',
+        '156' : '39rem',
+        '180' : '45rem',
+      },
     },
   },
   plugins: [],
