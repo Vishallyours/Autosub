@@ -18,7 +18,7 @@ export default function EditPage() {
                 ]}
              />
              
-<Box className="flex justify-center items-center xs:w-auto xs:h-108">
+<Box className="flex justify-center items-center xs:w-auto xs:h-108 xs:px-8 xs:mt-10">
   <div className="flex md:flex-row xs:flex-col gap-8 md:justify-evenly xs:my-8 xs:mx-4 ">
     
   <div className="flex flex-col justify-center items-center gap-4">
