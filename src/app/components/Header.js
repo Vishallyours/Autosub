@@ -11,7 +11,7 @@ return (
            <a href="#" className="text-textColor font-custom">AUTOSUB</a>
       
       </div>
-            <ul className="nav-links flex relative items-center gap-2">
+            <ul className="nav-links md:flex xs:hidden relative items-center gap-2">
                   
                   <li className="nav-link p-1">
                     <a href="#">Solutions</a> 

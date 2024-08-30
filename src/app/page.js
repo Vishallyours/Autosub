@@ -6,14 +6,16 @@ export default function Home() {
       <main className="flex min-h-screen flex-col p-10 bg-white ">
               <InteractiveText 
                 textArray={[
-                  <>
-                    GENERATE <span className="font-custom text-black">SUBTITLES</span>
-                  </>, 
-                    "FOR YOUR VIDEOS"
+                  <span className="md:block xs:flex flex-col items-center">
+                    GENERATE <span className="font-custom text-black xs:font-normal">SUBTITLES</span>
+                  </span>, 
+                   "FOR YOUR VIDEOS"
+                      
                 ]} 
                 stylesArray={[
-                    "text-black",  // Apply the general style to the whole first line
-            
+                    "text-black",
+                    "whitespace-nowrap xs:text-xl"  // Apply the general style to the whole first line
+        
                 ]}
              />
 <Box>  
@@ -30,7 +32,9 @@ export default function Home() {
           {/*upload text*/ }
           <div className="flex flex-col ml-4">
       <span className=" text-black text-xl font-semibold">Upload File</span>
-      <span className=" text-gray-700 text-xs">select or drop the file of your choice  </span>
+      <span className=" md:flex xs:hidden text-gray-700 text-xs">select or drop the file of your choice  </span>
+      
+      <span className="md:hidden xs:flex text-gray-700 text-xs">select a file </span>
       
       </div>
     </div>
@@ -38,10 +42,10 @@ export default function Home() {
   </div>
 
   {/* Horizontal rule */}
-  <hr className="w-full border-t border-gray-400 " />
+  <hr className="w-full border-t border-gray-400 md:flex xs:hidden "/>
 
   {/* Container for text lines and button */}
-  <div className="flex flex-col items-center justify-center border border-dashed border-black w-96 h-44 p-4 m-8  rounded-3xl">    {/* dotted box */}
+  <div className="flex flex-col items-center justify-center border border-dashed border-black w-96 h-44 p-4 m-8 rounded-3xl xs:hidden md:flex">    {/* dotted box */}
     <div className="text-center mb-4">  
       <p className="text-lg">Choose or drag & drop it here</p>
       <p className="text-xs opacity-50">MP4,MPEG4,WebM, and MOV, up to 50MB</p>

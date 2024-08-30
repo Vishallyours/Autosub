@@ -22,14 +22,14 @@ export default function DownloadPage() {
              />
               </div>
         
-              <div className="flex -ml-16 mt-20 justify-center items-center gap-4">
-
-                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<div className="flex -ml-16 mt-20 justify-normal items-center gap-4">
+                <div className="cursor-pointer flex">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M24 16L16 24M16 24L24 32M16 24L32 24M24 4C35.0457 4 44 12.9543 44 24C44 35.0457 35.0457 44 24 44C12.9543 44 4 35.0457 4 24C4 12.9543 12.9543 4 24 4Z" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-
+                    </svg>
+                </div>
                 
-        <Box className="w-auto h-auto justify-center mt-0 hover:bg-red-600">
+        <Box className="w-auto h-auto justify-center mt-0 hover:bg-red-600 cursor-pointer">
 
                 <div className="flex gap-4 mx-4 my-2 p-4 font-medium text-4xl"> 
                     <div className="flex">
@@ -48,7 +48,7 @@ export default function DownloadPage() {
         
               </div>
               
-              <div className="flex flex-col mt-8 items-center">
+              <div className="flex flex-col mt-20 items-center">
               
                 <span className="text-xl font-medium">How can you thank us? Spread the word! 
                 </span>
