@@ -14,7 +14,7 @@ export default function Home() {
                 ]} 
                 stylesArray={[
                     "text-black",
-                    "whitespace-nowrap xs:text-xl"  // Apply the general style to the whole first line
+                    "whitespace-nowrap md:text-4xl xs:text-2xl xs:font-medium",  // Apply the general style to the whole first line
         
                 ]}
              />

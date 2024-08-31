@@ -56,7 +56,7 @@ export default function DownloadPage() {
 
               <div className="flex flex-col mt-20 items-center">
               
-              <Box className="md:hidden px-4 rounded-md -mt-16 text-lg  font-normal hover:bg-black hover:text-white cursor-pointer">return</Box>
+              <Box className="md:hidden px-4 rounded-md xs:-mt-16 text-lg  font-normal hover:bg-black hover:text-white cursor-pointer">return</Box>
             
                 <span className=" md:mt-0 xs:mt-8 text-xl font-medium xs:text-center  whitespace-break-spaces">How can you thank us? Spread the word! 
                 </span>

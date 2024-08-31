@@ -1,34 +1,54 @@
 import React from "react";
+import HamburgerMenu from "./Navbar/HamburgerMenu";
+import NavbarLinks from "./Navbar/navbarLinks";
 
 const Header = () =>{
 return (
+<div className="flex ">
+      
+      <div className="Navbar
+      flex
+      w-full
+      h-24
+      min-w-42
+      px-8
+      justify-between
+      items-center
+      border-navbarColor
+      bg-navbarColor 
+      rounded-full
+          ">        
+            
+                  <div className="logo 
+                  flex 
+                  md:text-4xl 
+                  xs:text-3xl 
+                  tracking-[4px] 
+                  items-center 
+                  text-textColor">
 
-<div  className="Navbar flex flex-col justify-center border-navbarColor h-24 w-auto bg-navbarColor rounded-full">
-              
-<div className="Navbar-group  flex flex-row justify-between items-center text-textColor mx-10">
-      
-      <div className="logo flex text-4xl tracking-[4px] items-center">
-           <a href="#" className="text-textColor font-custom">AUTOSUB</a>
-      
-      </div>
-            <ul className="nav-links md:flex xs:hidden relative items-center gap-2">
+                        <a href="#" className="text-textColor font-custom">AUTOSUB</a>
+            
+                        </div>
                   
-                  <li className="nav-link p-1">
-                    <a href="#">Solutions</a> 
-                  </li>
-                  <li className="nav-link p-1"> 
-                    <a href="#" >Community</a>
-                  </li>   
-                  <li className="nav-link p-1">
-                    <a href="#">Resource</a>
-                  </li>
-                  <li className="nav-link p-1"> 
-                    <a href="#">Contact</a>
-                  </li>
-            </ul>
-</div>
-</div>
-);
-};
+                  <NavbarLinks className="md:flex
+                  xs:hidden"></NavbarLinks>
+       
+                  <div className="
+                  md:hidden 
+                  xs:flex 
+                  border-2
+                  border-black 
+                  rounded-full 
+                  items-center
+                  my-6 
+                  mx-1">
+
+                  <HamburgerMenu className="xs:flex md:hidden"/>
+                  </div>
+ </div>
+ </div>
+            );
+      };
 
 export default Header;
