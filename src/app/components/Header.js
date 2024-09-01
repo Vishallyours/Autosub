@@ -1,9 +1,20 @@
-import React from "react";
+'use client'
+
+import React, { useState } from "react";
 import HamburgerMenu from "./Navbar/HamburgerMenu";
 import NavbarLinks from "./Navbar/navbarLinks";
 
-const Header = () =>{
-return (
+const Header = () => {
+      const [isBgBlack, setIsBgBlack] = useState(false);
+
+  const toggleColor = () => {
+    setIsBgBlack(true);
+    setTimeout(() => {
+      setIsBgBlack(false);
+    }, 100);
+  }; 
+      return (
+
 <div className="flex ">
       
       <div className="Navbar
@@ -34,15 +45,18 @@ return (
                   <NavbarLinks className="md:flex
                   xs:hidden"></NavbarLinks>
        
-                  <div className="
+                  <div className={`
                   md:hidden 
                   xs:flex 
-                  border-2
-                  border-black 
                   rounded-full 
                   items-center
                   my-6 
-                  mx-1">
+                  mx-1
+                  bg-opacity-10      
+                  ${isBgBlack ? 'bg-black' : 'bg-transparent'}
+                  `}
+                  onClick={toggleColor}
+                  >
 
                   <HamburgerMenu className="xs:flex md:hidden"/>
                   </div>
